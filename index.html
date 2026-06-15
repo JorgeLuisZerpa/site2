@@ -89,6 +89,8 @@
                 </tr>
             </tbody>
 
+    
+
         </table>
     </section>
 
@@ -132,6 +134,166 @@
 
 
             </form>
+
+            
+    <main>
+        <h1>Cadastro para aluno</h1>
+
+        <form id="FORM" name="FORM" action="#" method="post">
+
+            <!-- Nome -->
+            <div>
+                <label for="NOME">Nome Completo:</label>
+                <input
+                    type="text"
+                    id="NOME"
+                    name="NOME"
+                    required
+                    aria-required="true">
+            </div>
+
+            <br>
+
+            <!-- E-mail -->
+            <div>
+                <label for="EMAIL">E-mail:</label>
+                <input
+                    type="email"
+                    id="EMAIL"
+                    name="EMAIL"
+                    required
+                    aria-required="true">
+            </div>
+
+            <br>
+
+            <!-- Idade -->
+            <div>
+                <label for="IDADE">Idade:</label>
+                <input
+                    type="number"
+                    id="IDADE"
+                    name="IDADE"
+                    min="18"
+                    required
+                    aria-required="true">
+            </div>
+
+            <br>
+
+            <!-- Assunto -->
+            <div>
+                <label for="ID_ASSUNTO">
+                    Para qual matéria você está se candidatando para lecionar?
+                </label>
+
+                <select
+                    id="ID_ASSUNTO"
+                    name="ASSUNTO"
+                    required
+                    aria-required="true">
+
+                    <option value="">Selecione uma matéria</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Português">Português</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Ciências">Ciências</option>
+                    <option value="História">História</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="Artes">Artes</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Turnos Disponíveis -->
+            <fieldset>
+                <legend>Turnos Disponíveis</legend>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="manha"
+                        name="TURNOS_DISPONIVEIS"
+                        value="Manhã">
+                    <label for="manha">Manhã</label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="tarde"
+                        name="TURNOS_DISPONIVEIS"
+                        value="Tarde">
+                    <label for="tarde">Tarde</label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="noite"
+                        name="TURNOS_DISPONIVEIS"
+                        value="Noite">
+                    <label for="noite">Noite</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Escolaridade -->
+            <div>
+                <label for="ESCOLARIDADE">Nível de Escolaridade:</label>
+
+                <select
+                    id="ESCOLARIDADE"
+                    name="ESCOLARIDADE"
+                    required
+                    aria-required="true">
+
+                    <option value="">Selecione</option>
+                    <option value="Ensino Superior Completo">
+                        Ensino Superior Completo
+                    </option>
+                    <option value="Cursando Mestrado">
+                        Cursando Mestrado
+                    </option>
+                    <option value="Mestrado Completo">
+                        Mestrado Completo
+                    </option>
+                    <option value="Cursando Doutorado">
+                        Cursando Doutorado
+                    </option>
+                    <option value="Doutorado Completo">
+                        Doutorado Completo
+                    </option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Descrição -->
+            <div>
+                <label for="DESCRICAO">Descrição sobre si mesmo:</label>
+
+                <textarea
+                    id="DESCRICAO"
+                    name="DESCRICAO"
+                    rows="5"
+                    cols="40"
+                    aria-describedby="descricao-ajuda"></textarea>
+
+                <small id="descricao-ajuda">
+                    Descreva sua experiência, qualificações e habilidades.
+                </small>
+            </div>
+
+            <br>
+
+            <button type="submit">Enviar Cadastro</button>
+
+        </form>
+    </main>
+
 
             <address>
                 E-mail: <a href="mailto:jorzersei@gmail.com">jorzersei@gmail.com</a> <br> <br>
